@@ -3,7 +3,7 @@ const app = express();
 
 // conttroller routes
 const { cocktailRouter } = require('./controllers/cocktails.js');
-const { spiritRouter } = require('.controllers/spirits.js');
+const { spiritRouter } = require('./controllers/spirits.js');
 const { mixerRouter } = require('./controllers/mixers.js');
 
 // MIDDLEWARE
