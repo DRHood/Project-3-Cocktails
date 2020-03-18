@@ -12,18 +12,27 @@ cocktailRouter.get('/', (req, res) => {
 });
 
 // get single cocktail
-creatureRouter.get('/:id', (req, res) => {
+cocktailRouter.get('/:id', (req, res) => {
   Cocktail.findById(req.params.id).then((cocktail) => {
     res.json(cocktail);
   });
 });
 
 // add a cocktail
-creatureRouter.post('/', (req, res) => {
+cocktailRouter.post('/', (req, res) => {
   Cocktail.create(req.body).then(() => {
     res.status(200).end();
   });
 });
+
+// edit a cocktail
+cocktailRouter.put('/:id', (req, res) => {
+  Cocktail.findByIdAndUpdate(req.params.id, req.body).then(() => {
+    res.status(200).status.end();
+  });
+});
+
+
 
 // Export router
 module.exports = {
