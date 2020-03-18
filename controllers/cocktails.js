@@ -32,6 +32,7 @@ cocktailRouter.put('/:id', (req, res) => {
   });
 });
 
+// delete a cocktail
 cocktailRouter.delete('/:id', (req, res) => {
   Cocktail.findByIdAndDelete(req.params.id).then(() => {
     res.status(200).end();
