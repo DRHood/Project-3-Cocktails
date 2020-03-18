@@ -3,6 +3,8 @@ const app = express();
 
 // conttroller routes
 const { cocktailRouter } = require('./controllers/cocktails.js');
+const { spiritRouter } = require('.controllers/spirits.js');
+const { mixerRouter } = require('./controllers/mixers.js');
 
 // MIDDLEWARE
 // parse HTTP requests from URL encoded string
@@ -14,6 +16,8 @@ app.use(express.static(`${__dirname}/client/build`));
 
 // routers for application use, first argument is prefix to paths defined in router
 app.use('/api/cocktails', cocktailRouter);
+app.use('/api/spirits', spiritRouter);
+app.use('/api/mixers', mixerRouter);
 
 // route to serve react appfor requests not made to api routes
 app.get('/*', (req, res) => {
@@ -21,7 +25,7 @@ app.get('/*', (req, res) => {
 });
 
 
-// server port
+// set server port
 const PORT = process.env.PORT || 3001
 // server start
 app.listen(PORT, () => {
