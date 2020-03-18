@@ -32,6 +32,11 @@ cocktailRouter.put('/:id', (req, res) => {
   });
 });
 
+cocktailRouter.delete('/:id', (req, res) => {
+  Cocktail.findByIdAndDelete(req.params.id).then(() => {
+    res.status(200).end();
+  });
+});
 
 
 // Export router
