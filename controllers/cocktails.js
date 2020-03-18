@@ -18,6 +18,13 @@ creatureRouter.get('/:id', (req, res) => {
   });
 });
 
+// add a cocktail
+creatureRouter.post('/', (req, res) => {
+  Cocktail.create(req.body).then(() => {
+    res.status(200).end();
+  });
+});
+
 // Export router
 module.exports = {
   cocktailRouter
