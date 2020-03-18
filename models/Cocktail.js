@@ -1,0 +1,27 @@
+const mongoose = require('./connection.js')
+
+const Cocktail = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+    },
+    glass: {
+        type: String,
+        required: true,
+    },
+    image: {
+        type: String,
+        required: true,
+    },
+    ingredients: {
+        type: [],
+        required: true,
+    },
+    recipe: {
+        type: String,
+        required: true,
+    },
+});
+
+
+module.exports = mongoose.model('Cocktail', Cocktail);
