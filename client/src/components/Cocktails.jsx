@@ -51,15 +51,15 @@ export default class Cocktails extends Component {
     // render function manages what's shown in browser
     render() {
         return (
-            <div>
-                <h1>Cocktails</h1>
+            <div className="container">
+                <h1>Cocktail Culture</h1>
                 {
                     this.state.cocktails.map((cocktail, i) => {
                         return (
                             <div key={ i }>
                                 <img src={ cocktail.image } alt={ cocktail.name }></img>
                                 <br/>
-                                <Link to={ cocktail._id }>{ cocktail.name }</Link>
+                                <Link to={ cocktail._id }><span class="txt-hl">{ cocktail.name }</span></Link>
                             </div>
                         )
                     })
