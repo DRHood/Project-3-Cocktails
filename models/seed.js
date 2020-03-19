@@ -72,8 +72,8 @@ const newMixers = [
     },
     {
         name: 'sour mix',
-        image: 'A cocktail mixer standardly made of equal parts lemon juice, lime juice, and symple syrup, often shaken vigorously with ice to produce a pearly-white liquid with a pronounced flavor.',
-        information: '',
+        image: 'https://ipcdn.freshop.com/resize?url=https://images.freshop.com/00725400000176/eadf9dafb1bf7183faed722f87cf5b3e_large.png&width=512&type=webp&quality=40',
+        information: 'A cocktail mixer standardly made of equal parts lemon juice, lime juice, and symple syrup, often shaken vigorously with ice to produce a pearly-white liquid with a pronounced flavor.',
     },
     {
         name: 'simple syrup',
@@ -82,7 +82,6 @@ const newMixers = [
     },
 ]
 
-const seedObjects;
 Cocktail.deleteMany().then(() => {
     return Spirit.deleteMany();
 }).then(() => {
