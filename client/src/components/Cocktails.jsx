@@ -59,7 +59,7 @@ export default class Cocktails extends Component {
                             <div key={ i }>
                                 <img src={ cocktail.image } alt={ cocktail.name }></img>
                                 <br/>
-                                <Link to={ cocktail._id }><span class="txt-hl">{ cocktail.name }</span></Link>
+                                <Link to={ cocktail._id }><span className="txt-hl">{ cocktail.name }</span></Link>
                             </div>
                         )
                     })
