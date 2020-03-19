@@ -46,7 +46,7 @@ export default class SingleCocktail extends Component {
 
     render() {
         if (this.state.redirect) {
-            return <Redirect to="/"/>;
+            return <Redirect to="/:id"/>;
         }
     
         const { name, glass, image, ingredients, recipe } = this.state.creature;
