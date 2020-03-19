@@ -8,6 +8,13 @@ export default class Cocktails extends Component {
     state = {
         cocktails: [],
         addOption: false,
+        newCocktail: {
+            name: '',
+        glass: '',
+        image: '',
+        ingredients: [],
+        recipe: '',
+        },
     }
 
     // componentDidMount to retrieve display data,

@@ -15,7 +15,7 @@ const Cocktail = new mongoose.Schema({
     },
     ingredients: {
         type: [],
-        required: true,
+        required: false,
     },
     recipe: {
         type: String,
