@@ -1,10 +1,10 @@
-**Project-1-Cocktails**
+**Cocktail Class**
 
-This Cocktails app is an interactive community database of cocktail recipes built with the MERN stack. It's purpose is to be a quick reference for those in the bar community to learn from, add to, and edit.
+Cocktail Class redevelopment is aimed at providing an in-depth training environmet for bartenders, built with the MERN stack. It will also contain features from the original project, such as quick reference, ability to submit additions, and edits.
 
-[**Public Deployment**](https://shrouded-beach-63540.herokuapp.com/)
+[**Public Deployment**](#)
 
-[**Project Board**](https://git.generalassemb.ly/users/DRHood/projects/1)
+[**Project Board**](#)
 
 **ERD & Wireframe**
-![ERD Wireframe](./ERD_Wireframe.jpg)
+New ERD & wireframes coming for expanded development
